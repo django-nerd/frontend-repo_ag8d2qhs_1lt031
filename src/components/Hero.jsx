@@ -17,15 +17,6 @@ export default function Hero() {
               Search walk-in clinics, same‑day telehealth, and after‑hours care. Compare wait times, insurance acceptance, and book instantly.
             </p>
 
-            <div className="mt-6 grid sm:flex gap-3">
-              <a href="#search" className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-sky-600 text-white font-medium shadow hover:bg-sky-700 transition">
-                Start a search
-              </a>
-              <a href="#how" className="inline-flex items-center justify-center px-5 py-3 rounded-md border border-slate-300 text-slate-700 font-medium hover:bg-slate-50">
-                How it works
-              </a>
-            </div>
-
             <div className="mt-6 flex items-center gap-4 text-xs text-slate-500">
               <div className="flex -space-x-2">
                 <img src="https://i.pravatar.cc/32?img=5" className="w-7 h-7 rounded-full border-2 border-white" />
