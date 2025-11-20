@@ -50,11 +50,78 @@ export default function Hero() {
                 </button>
               </div>
 
-              <div className="mt-4 grid grid-cols-2 gap-3 text-xs text-slate-600">
-                <div className="p-3 rounded-md bg-slate-50 border border-slate-200">Real‑time wait times</div>
-                <div className="p-3 rounded-md bg-slate-50 border border-slate-200">Insurance friendly</div>
-                <div className="p-3 rounded-md bg-slate-50 border border-slate-200">Online booking</div>
-                <div className="p-3 rounded-md bg-slate-50 border border-slate-200">24/7 telehealth</div>
+              {/* Symptom/complaint dropdown replacing the feature cards */}
+              <div className="mt-4">
+                <label className="text-xs text-slate-600 mb-1 block">Symptom or complaint (optional)</label>
+                <input
+                  type="text"
+                  list="symptom-options"
+                  placeholder="Start typing… e.g., Sore Throat, UTI, RSV"
+                  className="w-full h-11 px-3 rounded-md border border-slate-300 focus:ring-2 focus:ring-sky-500 outline-none"
+                />
+                <datalist id="symptom-options">
+                  <option>Abdominal Pain</option>
+                  <option>Abscess & Cysts</option>
+                  <option>Allergies</option>
+                  <option>Asthma</option>
+                  <option>Athlete’s Foot</option>
+                  <option>Biometric Screening</option>
+                  <option>Bloodwork</option>
+                  <option>Bronchitis & Pneumonia</option>
+                  <option>Bug Bites</option>
+                  <option>Burns</option>
+                  <option>Cardiovascular Health</option>
+                  <option>Cold & Cough</option>
+                  <option>COVID-19</option>
+                  <option>COVID-19 Antibody Testing</option>
+                  <option>Cuts & Scrapes</option>
+                  <option>Diabetes Care</option>
+                  <option>DOT Physicals (PLEASE CALL AHEAD TO ENSURE PROVIDER AVAILABILITY)</option>
+                  <option>Drug Testing</option>
+                  <option>Ear Infections</option>
+                  <option>Ear Irrigation</option>
+                  <option>Fever</option>
+                  <option>Flu Shots</option>
+                  <option>Flu Treatment</option>
+                  <option>Food Poisoning</option>
+                  <option>Foreign Body Removal</option>
+                  <option>Fractures & Dislocations</option>
+                  <option>Hand, Foot, Mouth</option>
+                  <option>Headaches & Migraines</option>
+                  <option>Hemorrhoid Treatment</option>
+                  <option>In-House Mono Test & Treatment</option>
+                  <option>Jock Itch</option>
+                  <option>Laceration Repair</option>
+                  <option>Lead Testing</option>
+                  <option>Lipo-B Injections</option>
+                  <option>Nausea, Vomiting, Diarrhea</option>
+                  <option>Pap Smear</option>
+                  <option>Pediatric Urgent Care</option>
+                  <option>Pink Eye</option>
+                  <option>Pregnancy Testing</option>
+                  <option>Prep Treatment</option>
+                  <option>Preoperative Clearance Examination</option>
+                  <option>Rashes</option>
+                  <option>Rapid Strep</option>
+                  <option>Respiratory Syncytial Virus (RSV)</option>
+                  <option>School, Sports, & Camp Physicals</option>
+                  <option>Skin Tag Removal</option>
+                  <option>Sore Throat</option>
+                  <option>Sprains & Strains</option>
+                  <option>STD Testing</option>
+                  <option>Tetanus Vaccines</option>
+                  <option>Tick Removal</option>
+                  <option>Tri-Immune Boost</option>
+                  <option>Tuberculosis Testing</option>
+                  <option>Upper Respiratory Infection</option>
+                  <option>Urinary Tract Infection</option>
+                  <option>VA Urgent Care Provider</option>
+                  <option>Vitamin B-12 Injections</option>
+                  <option>Wart Removal</option>
+                  <option>Wellness & Employment Physicals</option>
+                  <option>X-Rays</option>
+                </datalist>
+                <p className="mt-2 text-xs text-slate-500">Choose a symptom to narrow results. You can leave this blank.</p>
               </div>
             </div>
           </div>
