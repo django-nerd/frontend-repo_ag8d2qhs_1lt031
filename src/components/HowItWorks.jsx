@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Stethoscope, CalendarCheck, ArrowRight } from "lucide-react";
+import { MapPin, Stethoscope, CalendarCheck } from "lucide-react";
 
 export default function HowItWorks() {
   const steps = [
@@ -85,81 +85,52 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      {/* PlushCare partner CTA - headline + secondary line; mobile button behavior */}
+      {/* Unified Telehealth CTA card */}
       <div className="relative px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
         <div className="mx-auto max-w-7xl">
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-            {/* subtle edge glow */}
-            <div className="pointer-events-none absolute -inset-px rounded-[1.5rem] bg-gradient-to-r from-sky-300/25 via-emerald-300/25 to-cyan-300/25" aria-hidden />
-
-            <div className="relative grid items-center gap-8 p-6 sm:p-8 lg:p-10 lg:grid-cols-12">
-              {/* Left: split headline */}
-              <div className="lg:col-span-7">
-                <div className="text-left">
-                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-900">
-                    Can't Wait?
-                  </h3>
-
-                  {/* Mobile: show as prominent button */}
-                  <a
-                    href="https://plushcare.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-slate-900 px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-slate-800 sm:hidden"
-                  >
-                    See a Board-Certified Doctor Online Now
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-
-                  {/* Tablet/Desktop: show as linked text */}
-                  <a
-                    href="https://plushcare.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-3 hidden sm:inline-flex items-center gap-2 text-lg sm:text-xl font-semibold text-slate-900 hover:text-slate-700 transition"
-                  >
-                    See a Board-Certified Doctor Online Now
-                    <ArrowRight className="h-5 w-5" />
-                  </a>
-
-                  <p className="mt-2 text-slate-600 max-w-prose">
-                    Get diagnosed, treated & prescriptions sent to your pharmacy in minutes. Available 24/7.
-                  </p>
+          <div className="mx-auto w-full max-w-3xl">
+            <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+              {/* Hero image with overlay badge */}
+              <div className="relative">
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1600&auto=format&fit=crop"
+                    alt="Patient holding phone during a telehealth visit"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="absolute top-3 right-3 rounded-full border border-slate-200 bg-white/80 backdrop-blur-sm px-3 py-1 text-xs font-medium text-slate-800 shadow-sm">
+                  24/7 Access
                 </div>
               </div>
 
-              {/* Right: video card with image (unchanged except button label) */}
-              <div className="lg:col-span-5">
-                <div className="relative mx-auto w-full max-w-sm">
-                  <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                    <div className="relative aspect-video overflow-hidden">
-                      <img
-                        src="https://images.unsplash.com/photo-1612538497732-8428d2f2f36e?q=80&w=1200&auto=format&fit=crop"
-                        alt="Doctor on a video call"
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div className="p-5">
-                      <div className="flex items-center gap-2">
-                        <div className="h-8 w-8 rounded-md bg-gradient-to-br from-sky-500 to-emerald-500 grid place-items-center text-white font-semibold">P</div>
-                        <div>
-                          <p className="text-sm font-semibold text-slate-900 leading-tight">PlushCare</p>
-                          <p className="text-xs text-slate-500 leading-tight">Virtual urgent care</p>
-                        </div>
-                      </div>
-                      <a
-                        href="https://plushcare.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-4 inline-flex w-full items-center justify-center h-11 rounded-lg bg-slate-900 text-white font-semibold tracking-wide hover:bg-slate-800"
-                      >
-                        CONNECT NOW
-                      </a>
-                    </div>
+              {/* Content */}
+              <div className="p-6 sm:p-8">
+                {/* Provider info */}
+                <div className="flex items-center gap-3">
+                  <div className="h-9 w-9 shrink-0 rounded-md bg-gradient-to-br from-sky-500 to-emerald-500 grid place-items-center text-white font-semibold">P</div>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900 leading-tight">PlushCare</p>
+                    <p className="text-xs text-slate-500 leading-tight">Virtual urgent care</p>
                   </div>
-                  <div className="absolute -top-3 -right-3 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 shadow-sm">
-                    24/7 access
-                  </div>
+                </div>
+
+                {/* Headings */}
+                <div className="mt-4">
+                  <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Can't Wait?</h3>
+                  <p className="mt-1 text-slate-700">See a doctor online in minutes.</p>
+                </div>
+
+                {/* Primary CTA */}
+                <div className="mt-6">
+                  <a
+                    href="https://plushcare.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex w-full items-center justify-center h-11 rounded-lg bg-emerald-600 text-white font-semibold tracking-wide shadow-sm hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                  >
+                    Connect Now
+                  </a>
                 </div>
               </div>
             </div>
