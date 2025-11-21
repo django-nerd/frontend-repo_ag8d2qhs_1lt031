@@ -85,7 +85,7 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      {/* PlushCare partner CTA - full-width primary button */}
+      {/* PlushCare partner CTA - headline + secondary line; video card unchanged */}
       <div className="relative px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
         <div className="mx-auto max-w-7xl">
           <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
@@ -93,28 +93,28 @@ export default function HowItWorks() {
             <div className="pointer-events-none absolute -inset-px rounded-[1.5rem] bg-gradient-to-r from-sky-300/25 via-emerald-300/25 to-cyan-300/25" aria-hidden />
 
             <div className="relative grid items-center gap-8 p-6 sm:p-8 lg:p-10 lg:grid-cols-12">
-              {/* Left: concise copy + primary button */}
+              {/* Left: split headline */}
               <div className="lg:col-span-7">
                 <div className="text-left">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900">
-                    Can't Wait? See a Board-Certified Doctor Online Now
+                  <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
+                    Can't Wait?
                   </h3>
+                  <a
+                    href="https://plushcare.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-flex items-center gap-2 text-lg sm:text-xl font-semibold text-slate-900 hover:text-slate-700 transition"
+                  >
+                    See a Board-Certified Doctor Online Now
+                    <ArrowRight className="h-5 w-5" />
+                  </a>
                   <p className="mt-2 text-slate-600 max-w-prose">
                     Get diagnosed, treated & prescriptions sent to your pharmacy in minutes. Available 24/7.
                   </p>
                 </div>
-                <a
-                  href="https://plushcare.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-flex w-full items-center justify-center gap-2 h-12 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
-                >
-                  Start telehealth visit now
-                  <ArrowRight className="h-5 w-5" />
-                </a>
               </div>
 
-              {/* Right: video card with image */}
+              {/* Right: video card with image (unchanged) */}
               <div className="lg:col-span-5">
                 <div className="relative mx-auto w-full max-w-sm">
                   <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
