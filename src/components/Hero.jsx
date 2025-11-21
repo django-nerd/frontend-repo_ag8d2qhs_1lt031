@@ -6,18 +6,18 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div>
-            <div className="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-full text-xs bg-white border border-sky-200 text-sky-700 shadow-sm mb-4">
+          <div className="text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-full text-xs bg-white border border-sky-200 text-sky-700 shadow-sm mb-4 mx-auto lg:mx-0">
               Trusted directory across the US & Canada
             </div>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900">
-              Find urgent care near you — fast.
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900">
+              Find Urgent Care Near You Now
             </h1>
-            <p className="mt-4 text-slate-600 text-base sm:text-lg">
+            <p className="mt-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
               Search walk-in clinics, same‑day telehealth, and after‑hours care. Compare wait times, insurance acceptance, and book instantly.
             </p>
 
-            <div className="mt-6 flex items-center gap-4 text-xs text-slate-500">
+            <div className="mt-6 flex items-center justify-center lg:justify-start gap-4 text-xs text-slate-500">
               <div className="flex -space-x-2">
                 <img src="https://i.pravatar.cc/32?img=5" className="w-7 h-7 rounded-full border-2 border-white" />
                 <img src="https://i.pravatar.cc/32?img=12" className="w-7 h-7 rounded-full border-2 border-white" />
