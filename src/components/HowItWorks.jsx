@@ -85,49 +85,46 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      {/* Unified Telehealth CTA card */}
+      {/* Unified Telehealth CTA card - text first, then image, provider footer */}
       <div className="relative px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto w-full max-w-3xl">
             <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
-              {/* Hero image with overlay badge */}
+              {/* Top hook text */}
+              <div className="p-4">
+                <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">Can't Wait?</h3>
+                <p className="mt-1 text-slate-700">See a doctor online in minutes.</p>
+              </div>
+
+              {/* Hero image with semi-transparent badge */}
               <div className="relative">
                 <div className="aspect-[16/9] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=1600&auto=format&fit=crop"
-                    alt="Patient holding phone during a telehealth visit"
+                    src="https://images.unsplash.com/photo-1606229365485-d5a2212b6a7b?q=80&w=1600&auto=format&fit=crop"
+                    alt="Telehealth visit on a smartphone"
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <div className="absolute top-3 right-3 rounded-full border border-slate-200 bg-white/80 backdrop-blur-sm px-3 py-1 text-xs font-medium text-slate-800 shadow-sm">
+                <div className="absolute top-2 right-2 rounded-full border border-white/60 bg-white/70 backdrop-blur-sm px-2.5 py-0.5 text-[11px] font-medium text-slate-800 shadow-sm">
                   24/7 Access
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 sm:p-8">
-                {/* Provider info */}
-                <div className="flex items-center gap-3">
-                  <div className="h-9 w-9 shrink-0 rounded-md bg-gradient-to-br from-sky-500 to-emerald-500 grid place-items-center text-white font-semibold">P</div>
-                  <div>
-                    <p className="text-sm font-semibold text-slate-900 leading-tight">PlushCare</p>
-                    <p className="text-xs text-slate-500 leading-tight">Virtual urgent care</p>
+              {/* Footer with provider and CTA */}
+              <div className="border-t border-slate-200 bg-slate-50 p-4">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="h-9 w-9 shrink-0 rounded-md bg-gradient-to-br from-sky-500 to-emerald-500 grid place-items-center text-white font-semibold">P</div>
+                    <div>
+                      <p className="text-sm font-semibold text-slate-900 leading-tight">PlushCare</p>
+                      <p className="text-xs text-slate-500 leading-tight">Virtual urgent care</p>
+                    </div>
                   </div>
-                </div>
-
-                {/* Headings */}
-                <div className="mt-4">
-                  <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Can't Wait?</h3>
-                  <p className="mt-1 text-slate-700">See a doctor online in minutes.</p>
-                </div>
-
-                {/* Primary CTA */}
-                <div className="mt-6">
                   <a
                     href="https://plushcare.com/"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex w-full items-center justify-center h-11 rounded-lg bg-emerald-600 text-white font-semibold tracking-wide shadow-sm hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
+                    className="inline-flex w-full sm:w-auto items-center justify-center h-11 rounded-lg bg-emerald-600 text-white font-semibold tracking-wide shadow-sm hover:bg-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2"
                   >
                     Connect Now
                   </a>
