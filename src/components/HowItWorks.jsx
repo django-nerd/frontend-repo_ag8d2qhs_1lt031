@@ -85,7 +85,7 @@ export default function HowItWorks() {
         </div>
       </div>
 
-      {/* PlushCare partner CTA - headline + secondary line; video card unchanged */}
+      {/* PlushCare partner CTA - headline + secondary line; mobile button behavior */}
       <div className="relative px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
         <div className="mx-auto max-w-7xl">
           <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
@@ -96,25 +96,39 @@ export default function HowItWorks() {
               {/* Left: split headline */}
               <div className="lg:col-span-7">
                 <div className="text-left">
-                  <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
+                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-900">
                     Can't Wait?
                   </h3>
+
+                  {/* Mobile: show as prominent button */}
                   <a
                     href="https://plushcare.com/"
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-2 inline-flex items-center gap-2 text-lg sm:text-xl font-semibold text-slate-900 hover:text-slate-700 transition"
+                    className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-slate-900 px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-slate-800 sm:hidden"
+                  >
+                    See a Board-Certified Doctor Online Now
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+
+                  {/* Tablet/Desktop: show as linked text */}
+                  <a
+                    href="https://plushcare.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 hidden sm:inline-flex items-center gap-2 text-lg sm:text-xl font-semibold text-slate-900 hover:text-slate-700 transition"
                   >
                     See a Board-Certified Doctor Online Now
                     <ArrowRight className="h-5 w-5" />
                   </a>
+
                   <p className="mt-2 text-slate-600 max-w-prose">
                     Get diagnosed, treated & prescriptions sent to your pharmacy in minutes. Available 24/7.
                   </p>
                 </div>
               </div>
 
-              {/* Right: video card with image (unchanged) */}
+              {/* Right: video card with image (unchanged except button label) */}
               <div className="lg:col-span-5">
                 <div className="relative mx-auto w-full max-w-sm">
                   <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
@@ -137,9 +151,9 @@ export default function HowItWorks() {
                         href="https://plushcare.com/"
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-4 inline-flex w-full items-center justify-center h-11 rounded-lg bg-slate-900 text-white font-medium hover:bg-slate-800"
+                        className="mt-4 inline-flex w-full items-center justify-center h-11 rounded-lg bg-slate-900 text-white font-semibold tracking-wide hover:bg-slate-800"
                       >
-                        Start telehealth visit
+                        CONNECT NOW
                       </a>
                     </div>
                   </div>
